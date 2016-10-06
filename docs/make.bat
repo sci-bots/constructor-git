@@ -130,9 +130,9 @@ if "%1" == "qthelp" (
 	echo.
 	echo.Build finished; now you can run "qcollectiongenerator" with the ^
 .qhcp project file in %BUILDDIR%/qthelp, like this:
-	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\python-package-template.qhcp
+	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\constructor-git.qhcp
 	echo.To view the help file:
-	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\python-package-template.ghc
+	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\constructor-git.ghc
 	goto end
 )
 

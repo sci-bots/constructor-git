@@ -1,9 +1,9 @@
-.. python-package-template documentation master file, created by
+.. constructor-git documentation master file, created by
    sphinx-quickstart on Mon Aug 22 12:39:50 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to python-package-template's documentation!
+Welcome to constructor-git's documentation!
 =====================================
 
 .. include:: README.rst

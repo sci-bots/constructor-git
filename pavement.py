@@ -8,22 +8,23 @@ from distutils.dep_util import newer
 sys.path.insert(0, path('.').abspath())
 import version
 
-setup(name='python-package-template',
+setup(name='constructor-git',
       version=version.getVersion(),
-      description='Add description here.',
+      description='Conda constructor wrapper to add git repo templating '
+      'support similar to conda build.',
       keywords='',
-      author='Anonymous',
-      author_email='you@mail.com',
-      url='https://github.com/wheeler-microfluidics/python-package-template',
+      author='Christian Fobel',
+      author_email='christian@fobel.net',
+      url='https://github.com/wheeler-microfluidics/constructor-git',
       license='GPL',
-      packages=['python_package_template', ],
-      install_requires=[],
+      packages=['constructor_git'],
+      install_requires=['GitPython', 'path-helpers'],
       # Install data listed in `MANIFEST.in`
       include_package_data=True)
 
 
 @task
-@needs('generate_setup', 'minilib', 'setuptools.command.sdist') 
+@needs('generate_setup', 'minilib', 'setuptools.command.sdist')
 def sdist():
     """Overrides sdist to make sure that our setup.py is generated."""
     pass

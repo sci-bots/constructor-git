@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# python-package-template documentation build configuration file, created by
+# constructor-git documentation build configuration file, created by
 # sphinx-quickstart on Mon Aug 22 12:39:50 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -58,7 +58,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'python-package-template'
+project = u'constructor-git'
 copyright = u'2016, Christian Fobel'
 author = u'Christian Fobel'
 
@@ -133,7 +133,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = u'python-package-template v0.4'
+#html_title = u'constructor-git v0.4'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -215,7 +215,7 @@ html_static_path = ['_static']
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'python-package-templatedoc'
+htmlhelp_basename = 'constructor-gitdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -237,7 +237,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'python-package-template.tex', u'python-package-template Documentation',
+    (master_doc, 'constructor-git.tex', u'constructor-git Documentation',
      u'Christian Fobel', 'manual'),
 ]
 
@@ -267,7 +267,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'python-package-template', u'python-package-template Documentation',
+    (master_doc, 'constructor-git', u'constructor-git Documentation',
      [author], 1)
 ]
 
@@ -281,8 +281,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'python-package-template', u'python-package-template Documentation',
-     author, 'python-package-template', 'One line description of project.',
+    (master_doc, 'constructor-git', u'constructor-git Documentation',
+     author, 'constructor-git', 'One line description of project.',
      'Miscellaneous'),
 ]
 
