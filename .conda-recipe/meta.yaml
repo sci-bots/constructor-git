@@ -16,6 +16,7 @@ requirements:
     - python
     - gitpython
     - path_helpers
+    - paver
 
   run:
     - gitpython

@@ -6,7 +6,7 @@ import path_helpers as ph
 from . import CRE_DESCRIBE, build_miniconda_exe
 
 
-def main(repo_root):
+def main(repo_root,channels=None):
     repo_root = ph.path(repo_root).realpath()
     output_dir = ph.path(os.getcwd()).realpath()
     try:
@@ -16,7 +16,8 @@ def main(repo_root):
                                                                '--dirty']))
 
         build_miniconda_exe('.miniconda-recipe', output_dir,
-                            context=describe_match.groupdict())
+                            context=describe_match.groupdict(),
+                            channels=channels)
     finally:
         os.chdir(output_dir)
 
