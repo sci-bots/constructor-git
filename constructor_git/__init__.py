@@ -28,6 +28,7 @@ def render_template_directory(template_root, output_root, context=None,
     '''
     import jinja2
     import path_helpers as ph
+    import yaml
 
     output_root = ph.path(output_root)
     template_root = ph.path(template_root)
@@ -54,6 +55,20 @@ def render_template_directory(template_root, output_root, context=None,
 
                 with output_path.open('w') as output:
                     output.write(text)
+
+        # Add additional channels to construct.yaml file
+        if 'channels' in kwargs:
+            if type(kwargs['channels']) != None:
+                with output_path.open('r') as f: construct_data = yaml.load(f)
+                channels = kwargs['channels']
+                if type(channels) == str: channels = [channels]
+                if 'channels' in construct_data:
+                    construct_data['channels'] += channels
+                if 'conda_default_channels' in construct_data:
+                    construct_data['conda_default_channels'] += channels
+                with output_path.open('w') as f:
+                    f.write(yaml.dump(construct_data))
+
     return output_root
 
 
