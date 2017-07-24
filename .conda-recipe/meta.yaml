@@ -15,6 +15,7 @@ requirements:
   build:
     - python
     - gitpython
+    - nose
     - path_helpers
     - paver
 
